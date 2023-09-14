@@ -85,21 +85,21 @@ int main() {
 
     char continueExecution = 'y';
     while (continueExecution == 'y' || continueExecution == 'Y') {
-        std::cout << "Enter a command (f, b, l, r, u, d): ";
+        cout << "Enter a command (f, b, l, r, u, d): ";
         char command;
-        std::cin >> command;
+        cin >> command;
 
         executeCommand(command, x, y, z, direction);
 
-        std::cout << "Current Position: (" << x << ", " << y << ", " << z << ")\n";
-        std::cout << "Current Direction: " << direction << "\n";
+        cout << "Current Position: (" << x << ", " << y << ", " << z << ")\n";
+        cout << "Current Direction: " << direction << "\n";
 
-        std::cout << "Do you want to enter another command? (y/n): ";
-        std::cin >> continueExecution;
+        cout << "Do you want to enter another command? (y/n): ";
+        cin >> continueExecution;
     }
 
-    std::cout << "Final Position: (" << x << ", " << y << ", " << z << ")\n";
-    std::cout << "Final Direction: " << direction << "\n";
+    cout << "Final Position: (" << x << ", " << y << ", " << z << ")\n";
+    cout << "Final Direction: " << direction << "\n";
 
     return 0;
 }
