@@ -74,7 +74,7 @@ void executeCommand(char command, int& x, int& y, int& z, char& direction) {
             }
             break;
         default:
-            // Handle invalid command (if needed)
+           cout<<"Invalid command!! Choose between (f,b,l,r,u,d) ONLY";
             break;
     }
 }
